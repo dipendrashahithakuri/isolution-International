@@ -21,7 +21,14 @@
   max-height: 100%;
   width: 100%;
   height: 100%;
+  cursor: pointer;
+  transition: 0.3s;
 }
+
+.gallery-container>div img:hover{
+  opacity: 0.7;
+}
+
 hr{
   width: 100%;
   height: 1%;
@@ -37,111 +44,81 @@ hr{
 }
 
 
+/* Image Model Zoom */
 
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999!important; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
 
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .gallery-container{
-  width: 100%;
-  height: auto;
-  background: #fff;
-  padding: 5%;
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
   text-align: center;
-  position: relative;
-  top: 158px;
-  margin-bottom: 158px;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
 }
 
-hr{
-  width: 100%;
-  height: 1%;
-  background: #008F4A;
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
-.gallery-container h1{
-    font-size: 2.5vw;
-    font-weight: 700;
-    color: #0B98D2;
-    display: block;
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
 }
 
-.tab-buttons{
-width: 100%;
-height: 10%;
-
-display: flex;
-justify-content: center;
-justify-items: center;
-padding: 0.5% 0%;
-margin: 2% 0%;
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
 }
 
-.tab-buttons>button{
-  margin-right: 1%;
-  width: 10%;
-  height: 100%;
-  border: none;
-  color: #008F4A;
-  
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.tab-buttons>button:hover{
-  color: black;
-  background: yellow;
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.tab{
-  width: 100%;
-  height: 90%;
-  background: inherit;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-items: center;
-  padding: 2% 0%;
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
-
-.tab>div{
-  width: 20%;
-  height: 30%;
-  background: inherit;
-  margin: 1% 1%;
-  text-align: center;
-}
-
-.tab>div img{
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.error-container{
-  width: 100%;
-  min-height:30%;
-}
-
-
-.error-message{
-  width: 40%;
-  min-height: 50%;
-  margin: 10% auto;
-  
-} */

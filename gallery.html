@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/gallery.css">
     
-       <!-- jQuery library -->
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-       <!-- Latest compiled JavaScript -->
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/main.js"></script>
 
@@ -34,9 +34,9 @@
             <div class="social-links">
     
                 <div class="icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="fb.com/isolution12"><i class="fab fa-facebook-f"></i></a>
+                    <a href="instagram.com/isolution12"><i class="fab fa-twitter"></i></a>
+                    <a href="twitter.com/isolution12"><i class="fab fa-google-plus-g"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#"><i class="fab fa-pinterest"></i></a>
                 </div>
@@ -150,22 +150,30 @@
 
     <section class="gallery-container">
         <h1>Gallery</h1> <hr>
-        <div><img src="./images/gallery/health/1.jpg" alt=""></div>
-        <div><img src="./images/gallery/health/2.jpg" alt=""></div>
-        <div><img src="./images/gallery/health/3.jpg" alt=""></div>
-        <div><img src="./images/gallery/health/4.jpeg" alt=""></div>
-        <div><img src="./images/gallery/health/5.jpg" alt=""></div>
-        <div><img src="./images/gallery/health/6.jpg" alt=""></div>
-        <div><img src="./images/gallery/health/7.jpg" alt=""></div>
-        <div><img src="./images/gallery/health/8.jpeg" alt=""></div>
-        <div><img src="./images/gallery/health/9.jpg" alt=""></div>
-        <div><img src="./images/gallery/health/10.jpg" alt=""></div>
-        <div><img src="./images/gallery/health/11.jpg" alt=""></div>
-        <div><img src="./images/gallery/health/12.jpg" alt=""></div>
+        <div><img src="./images/gallery/media coverage/1.jpg" alt="gallery" onclick="zoom()"></div>
+        <div><img src="./images/gallery/media coverage/2.jpg" alt="gallery" onclick="zoom()"></div>
+        <div><img src="./images/gallery/media coverage/3.jpg" alt="gallery" onclick="zoom()"></div>
+        <div><img src="./images/gallery/media coverage/4.jpg" alt="gallery" onclick="zoom()"></div>
+        <div><img src="./images/gallery/media coverage/5.jpg" alt="gallery" onclick="zoom()"></div>
+        <div><img src="./images/gallery/media coverage/6.jpg" alt="gallery" onclick="zoom()"></div>
+        <div><img src="./images/gallery/media coverage/7.jpg" alt="gallery" onclick="zoom()"></div>
+        <div><img src="./images/gallery/media coverage/8.jpg" alt="gallery" onclick="zoom()"></div>
+        <div><img src="./images/gallery/media coverage/9.jpg" alt="gallery" onclick="zoom()"></div>
+        <div><img src="./images/gallery/media coverage/10.jpg" alt="gallery" onclick="zoom()"></div>
+        <div><img src="./images/gallery/media coverage/11.jpg" alt="gallery" onclick="zoom()"></div>
+        <div><img src="./images/gallery/media coverage/12.jpg" alt="gallery" onclick="zoom()"></div>
+        <div><img src="./images/gallery/media coverage/13.jpg" alt="gallery" onclick="zoom()"></div>
+        <div><img src="./images/gallery/media coverage/14.jpg" alt="gallery" onclick="zoom()"></div>
+        <div><img src="./images/gallery/media coverage/15.jpg" alt="gallery" onclick="zoom()"></div>
+        
     </section>
 
-
-
+        <!-- The Modal -->
+    <section id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="model-img">
+        <div id="caption"></div>
+    </section>
 
     <section class="footer-container">  
 
@@ -212,7 +220,8 @@
     
     
     <i class="fas fa-arrow-up scroll-top" id="scroll-top"></i>
-    
 
+    
+    <script src="./js/zoom.js"></script>
 </body>
 </html>

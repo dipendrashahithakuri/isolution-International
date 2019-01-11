@@ -132,13 +132,13 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #F6BD2E;
+    color: #fff;
     text-decoration: none;
     font-size: 1.1vw;
     font-weight: 500;
 }
 nav ul li:hover{
-    background:#0D0D0D;
+    background:#130f40;
 }
 
 .dropper{
@@ -347,6 +347,7 @@ hr{
     text-align: center;
     font-size: 2.5vw;
     color: #0B98D2;
+    margin-bottom: 5%;
 }
 
 .different-container hr{
