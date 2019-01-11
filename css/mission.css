@@ -1,0 +1,71 @@
+h1{
+    text-align: center;
+    font-size: 2vw;
+    color: #008F4A;
+    font-weight: 700;
+}
+
+p{
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+hr{
+    width: 100%;
+    margin: 1% 0%;
+}
+
+#navhr{
+    width: 15%;
+    position: absolute;
+    top: 30%;
+    right: 17%;
+    background: #008F4A;
+    height: 3px;
+    z-index: 1;
+
+}
+
+.mission-wrapper{
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    top: 140px;
+    margin-bottom: 140px;
+    padding: 0% 5%;
+}
+
+.mission-image{
+    width: 100%;
+    height: 200px;
+    background: url('../images/logo22.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mission-container{
+    padding-top: 2%;
+    width: 100%;
+    height: 20%;
+}
+
+.vision-container{
+    width: 100%;
+    height: 20%;
+}
+
+.corevalue-container{
+    width: 100%;
+    height:40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.corevalue-container>div{
+    width: 100%;
+    height: 12%;
+}
