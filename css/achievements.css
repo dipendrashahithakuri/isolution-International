@@ -34,19 +34,14 @@
 
 .achievement-container>div{
     width: 20%;
-    height: 30%;
-    margin: 0% 1%;
+    height: 20%;
+    margin: 1%;
     display: block;
 }
-.img-box{
-    height: 100%;
-    width: 100%;
-    background: #D1D1D1;
-}
 
-.img-box img{
+.achievements-box img{
     max-width: 100%;
-    max-height: 100%;
-    /* height: 100%; */
     width: 100%;
+    max-height: 100%;
+    height: 200px;
 }

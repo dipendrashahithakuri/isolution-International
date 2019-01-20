@@ -1,10 +1,14 @@
 h3{
     text-align: center;
     margin-top: 5%;
+    line-height: 1.6;
+    font-size: 22px;
 }
 
-h4{
+h4,h5,h6{
     text-align: center;
+    line-height: 1.6;
+    color: #008F4A;
 }
 
 .team-container{
@@ -25,7 +29,7 @@ h4{
     height: 40%;
     display: block;
     /* background: #ecf0f1; */
-    margin: 0% 1%;
+    margin:1%;
 }
 
 .team-container>div img{
